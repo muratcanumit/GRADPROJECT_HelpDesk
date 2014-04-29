@@ -80,7 +80,7 @@ class Device (models.Model):
                        _('Have a nice day.') +
                        '\n\n' + _('Kadir Has University Help Desk'))
 
-            send_key_email(self.email, message)
+            # send_key_email(self.email, message)
 
         else:
             message = (_('Progress of your device is completed.') +
@@ -93,7 +93,7 @@ class Device (models.Model):
                        _('Have a nice day.') +
                        '\n\n' + _('Kadir Has University Help Desk'))
 
-            send_key_email(self.email, message)
+            # send_key_email(self.email, message)
 
         super(Device, self).save(*args, **kwargs)
 
